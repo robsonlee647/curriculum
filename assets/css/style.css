@@ -216,10 +216,13 @@ img { max-width: 100%; display: block; }
   .sidebar-bottom { padding: 1.75rem 1.25rem 2.25rem; }
 }
 
+@media (max-width: 440px) {
+  .footer-role { display: none; }
+}
+
 /* Very small phones */
 @media (max-width: 360px) {
   .main-inner { padding: 1.75rem 0.9rem 2.5rem; }
-  .footer-role { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
