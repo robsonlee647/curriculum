@@ -216,7 +216,8 @@ img { max-width: 100%; display: block; }
   .sidebar-bottom { padding: 1.75rem 1.25rem 2.25rem; }
 }
 
-@media (max-width: 440px) {
+/* Touch devices without a mouse (phones) — not just narrow desktop windows */
+@media (hover: none) and (pointer: coarse) {
   .footer-role { display: none; }
 }
 
