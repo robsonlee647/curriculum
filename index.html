@@ -3,174 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Full-Stack Developer Curriculum</title>
-<meta name="description" content="A hands-on, project-based path from environment setup to a deployed full-stack app — JavaScript, Next.js, NestJS, PostgreSQL, and Firebase Auth.">
+<title>Robson Lee — Senior Full Stack Java Developer</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="page">
 
-<nav class="site-nav">
-  <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark"></span>curriculum</a>
-    <div class="nav-links">
-      <a href="index.html" data-page="index.html">Home</a>
-      <a href="prerequisites.html" data-page="prerequisites.html">Prerequisites</a>
-      <a href="frontend.html" data-page="frontend.html">Frontend</a>
-      <a href="backend.html" data-page="backend.html">Backend</a>
-      <a href="capstone.html" data-page="capstone.html">Capstone</a>
-      <a class="gh" href="https://github.com/robsonlee647/curriculum" target="_blank" rel="noopener">
-        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-        GitHub
-      </a>
-    </div>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M2 5h16v1.5H2zM2 9.25h16v1.5H2zM2 13.5h16V15H2z"/></svg>
-    </button>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="eyebrow">Mentorship Curriculum</span>
-    <h1>A hands-on path to full-stack developer, one real project at a time.</h1>
-    <p class="lede">Seven stages, each a working codebase — from tool setup to a deployed marketplace app built with Next.js, NestJS, PostgreSQL, and Firebase Auth. Built by <a href="https://github.com/robsonlee647" target="_blank" rel="noopener" style="color:var(--accent-bright)">Robson Lee</a> to mentor new developers through practice, not slides.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#roadmap">View the roadmap</a>
-      <a class="btn btn-ghost" href="capstone.html">See the capstone project</a>
-    </div>
-  </div>
-</header>
-
-<section id="roadmap">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>The learning path</h2>
-      <p>Every stage is a real, runnable repository. Each one builds directly on the last — same Todo API, one new concept layered in at a time — until the final stage combines everything into a shipped product.</p>
+  <aside class="sidebar">
+    <div class="avatar">
+      <img src="assets/img/photo.jpg" alt="Robson Lee"
+           onerror="this.style.display='none'; this.parentElement.classList.add('avatar--empty')">
+      <span class="avatar-fallback" aria-hidden="true">RL</span>
     </div>
 
-    <div class="roadmap">
+    <h1 class="name">Robson Lee</h1>
+    <p class="title">Senior Full Stack Java Developer</p>
+    <p class="location">📍 Toronto, Ontario, Canada</p>
 
-      <div class="stage" style="--stage-color: var(--text-dim)">
-        <div class="stage-rail"><div class="stage-num">0</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Setup</span>
-              <h3>Prerequisites</h3>
-            </div>
-          </div>
-          <p>Get the machine ready: editor, version control, Node, PostgreSQL, and Claude Code — before writing a line of app code.</p>
-          <div class="chips">
-            <span class="chip">IntelliJ</span><span class="chip">Homebrew</span><span class="chip">nvm / Node</span><span class="chip">PostgreSQL</span>
-          </div>
-          <a class="repo-link" href="prerequisites.html">View stage details →</a>
-        </div>
-      </div>
-
-      <div class="stage" style="--stage-color: var(--stage-js)">
-        <div class="stage-rail"><div class="stage-num">1</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Frontend</span>
-              <h3>JavaScript Foundations</h3>
-            </div>
-          </div>
-          <p>Core language and browser fundamentals in a minimal sandbox — no framework in the way yet.</p>
-          <div class="chips"><span class="chip">JavaScript</span><span class="chip">DOM</span><span class="chip">Node server</span></div>
-          <a class="repo-link" href="frontend.html">View stage details →</a>
-        </div>
-      </div>
-
-      <div class="stage" style="--stage-color: var(--stage-next)">
-        <div class="stage-rail"><div class="stage-num">2</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Frontend</span>
-              <h3>Next.js</h3>
-            </div>
-          </div>
-          <p>Routing, components, state, and API calls — via a choice of a guided 4-lesson track or a self-paced 3-week project track.</p>
-          <div class="chips"><span class="chip">Next.js 14</span><span class="chip">React</span><span class="chip">TypeScript</span></div>
-          <a class="repo-link" href="frontend.html">View stage details →</a>
-        </div>
-      </div>
-
-      <div class="stage" style="--stage-color: var(--stage-nest)">
-        <div class="stage-rail"><div class="stage-num">3</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Backend</span>
-              <h3>NestJS</h3>
-            </div>
-          </div>
-          <p>A Todo REST API with an in-memory store — just module → controller → service → DTO, plus Swagger docs.</p>
-          <div class="chips"><span class="chip">NestJS</span><span class="chip">REST</span><span class="chip">Swagger</span></div>
-          <a class="repo-link" href="backend.html">View stage details →</a>
-        </div>
-      </div>
-
-      <div class="stage" style="--stage-color: var(--stage-db)">
-        <div class="stage-rail"><div class="stage-num">4</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Backend</span>
-              <h3>TypeORM + PostgreSQL</h3>
-            </div>
-          </div>
-          <p>The same Todo API, now persisting to a real database. The controller and DTOs don't change — only storage does.</p>
-          <div class="chips"><span class="chip">TypeORM</span><span class="chip">PostgreSQL</span></div>
-          <a class="repo-link" href="backend.html">View stage details →</a>
-        </div>
-      </div>
-
-      <div class="stage" style="--stage-color: var(--stage-auth)">
-        <div class="stage-rail"><div class="stage-num">5</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Backend</span>
-              <h3>Firebase Authentication</h3>
-            </div>
-          </div>
-          <p>Identity enters the picture: verified tokens, guarded routes, and data scoped to the signed-in user.</p>
-          <div class="chips"><span class="chip">Firebase Auth</span><span class="chip">Guards</span><span class="chip">Per-user data</span></div>
-          <a class="repo-link" href="backend.html">View stage details →</a>
-        </div>
-      </div>
-
-      <div class="stage" style="--stage-color: var(--stage-capstone)">
-        <div class="stage-rail"><div class="stage-num">6</div></div>
-        <div class="stage-card">
-          <div class="stage-card-top">
-            <div>
-              <span class="stage-tag">Capstone</span>
-              <h3>SnapTask — a task marketplace</h3>
-            </div>
-          </div>
-          <p>Everything from stages 1–5, combined into a shipped product: a two-sided task marketplace with auth, bookings, and file uploads.</p>
-          <div class="chips"><span class="chip">Next.js</span><span class="chip">NestJS</span><span class="chip">PostgreSQL</span><span class="chip">Firebase Auth</span><span class="chip">Cloud Storage</span></div>
-          <a class="repo-link" href="capstone.html">View stage details →</a>
-        </div>
-      </div>
-
+    <div class="sidebar-section">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><a href="mailto:rofamex@gmail.com">rofamex@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/robsonlee-78b22043" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </div>
-  </div>
-</section>
 
-<footer>
-  <div class="wrap">
-    <p>Curriculum &amp; mentorship by Robson Lee.</p>
-    <div class="foot-links">
-      <a href="https://github.com/robsonlee647" target="_blank" rel="noopener">Mentor · @robsonlee647</a>
-      <a href="https://github.com/alebofflee" target="_blank" rel="noopener">Student · @alebofflee</a>
+    <div class="sidebar-section">
+      <h2>Top Skills</h2>
+      <ul class="pill-list">
+        <li>Axon Framework</li>
+        <li>Java</li>
+        <li>Elasticsearch</li>
+      </ul>
     </div>
-  </div>
-</footer>
 
-<script src="assets/js/main.js"></script>
+    <div class="sidebar-section">
+      <h2>Technologies</h2>
+      <ul class="pill-list pill-list--tight">
+        <li>Spring / Spring Boot</li>
+        <li>Angular</li>
+        <li>NgRx</li>
+        <li>Hibernate / JPA</li>
+        <li>Apache Camel</li>
+        <li>Kafka-style Web Services</li>
+        <li>Elasticsearch / Kibana / Logstash</li>
+        <li>Jenkins / DevOps</li>
+        <li>PostgreSQL / MS SQL Server</li>
+        <li>AWS</li>
+        <li>Maven</li>
+        <li>Git / GitLab</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h2>Education</h2>
+      <p class="edu">
+        <strong>UNESP</strong><br>
+        Bachelor in Computer Science<br>
+        2008 – 2012
+      </p>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <section class="block">
+      <h2 class="block-title">Summary</h2>
+      <p>
+        My goal is to improve my knowledge, learn new technologies, assist in training the team
+        and support other analysts so that the company has a strong base and grows with the company.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2 class="block-title">Experience</h2>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Full Stack Developer Senior</h3>
+            <p class="job-company">Fiix Software</p>
+          </div>
+          <div class="job-meta">
+            <span class="job-dates">May 2021 – Present</span>
+            <span class="job-location">Canada</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Full Stack Java Developer Senior</h3>
+            <p class="job-company">Prodesp</p>
+          </div>
+          <div class="job-meta">
+            <span class="job-dates">Mar 2018 – Mar 2021</span>
+            <span class="job-location">São Paulo, Brazil</span>
+          </div>
+        </div>
+        <p>
+          A company of the São Paulo State Government responsible for data processing and a major
+          provider of technological solutions for the entire São Paulo government and its
+          organizations (<a href="https://www.poupatempo.sp.gov.br/" target="_blank" rel="noopener">poupatempo.sp.gov.br</a>).
+        </p>
+        <ul>
+          <li>Led a project sending email and push notifications for a wide range of citizen-facing events.</li>
+          <li>Led a project supporting the big data analytics team to reconcile and resolve database inconsistencies.</li>
+        </ul>
+        <p class="job-tech">
+          Git, GitLab, JBoss, Tomcat, Astah, Java, Eclipse, Spring Tool Suite, Lombok, Apache Camel,
+          FreeMarker, Log4j, Maven, Elasticsearch, Kibana, Logstash, Jenkins, DevOps, Postman,
+          Microsoft SQL Server, VS Code, Angular 6 &amp; 8+, NgRx, Sass, Material, Flex-Layout, PrimeNG
+        </p>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Analyst Development Java</h3>
+            <p class="job-company">GoPoints</p>
+          </div>
+          <div class="job-meta">
+            <span class="job-dates">Feb 2011 – Jan 2018</span>
+            <span class="job-location">São Paulo, Brazil</span>
+          </div>
+        </div>
+        <p>
+          Sales force management, incentive campaigns, mileage programs, recognition programs,
+          loyalty programs, benefit portal, cashback shopping and cashback incentive programs
+          (<a href="https://www.gopoints.com.br/" target="_blank" rel="noopener">gopoints.com.br</a>).
+        </p>
+        <ul>
+          <li>Responsible for integrating cellphone recharge systems.</li>
+          <li>Implemented web services for sellers of TIM, a Brazilian telephone company.</li>
+          <li>Built web services for shopping in the Smiles mileage program.</li>
+        </ul>
+        <p class="job-tech">
+          Eclipse, Java, JEE, EJB, CriteriaBuilder, Hibernate, JPA, JPQL, Web Services / SoapUI,
+          Quartz, iReport, JavaME, Struts MVC, JavaServer Faces, RichFaces, PrimeFaces, OpenFaces,
+          JavaScript, jQuery, HTML/XHTML, cross-browser responsive CSS, MS SQL Server, JBoss,
+          EA, CVS, SVN, Tomcat, Apache Server, Jira, Maven, AWS, Selenium, Liferay, Velocity, FreeMarker
+        </p>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Developer and Systems Manager</h3>
+            <p class="job-company">Jannie Polo</p>
+          </div>
+          <div class="job-meta">
+            <span class="job-dates">Jul 2010</span>
+            <span class="job-location">São Paulo, Brazil</span>
+          </div>
+        </div>
+        <p>Creation and maintenance of a system that manages stock and sales.</p>
+      </article>
+    </section>
+
+    <section class="block">
+      <h2 class="block-title">Education</h2>
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Bachelor in Computer Science</h3>
+            <p class="job-company">Universidade Estadual Paulista Júlio de Mesquita Filho (UNESP)</p>
+          </div>
+          <div class="job-meta">
+            <span class="job-dates">2008 – 2012</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+</div>
 </body>
 </html>

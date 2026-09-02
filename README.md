@@ -1,30 +1,23 @@
 # curriculum
 
-A hands-on, project-based full-stack developer curriculum — a static site published on GitHub Pages.
-
-The curriculum moves through seven stages, each a real, runnable repository under [@alebofflee](https://github.com/alebofflee):
-
-0. **Prerequisites** — editor, git, Node, PostgreSQL, Claude Code
-1. **JavaScript Foundations** — core language, no framework
-2. **Next.js** — routing, components, state, API calls
-3. **NestJS** — a Todo REST API (in-memory)
-4. **TypeORM + PostgreSQL** — the same API, now persisted
-5. **Firebase Authentication** — the same API, now per-user
-6. **Capstone: SnapTask** — a two-sided task marketplace combining everything above
+Robson Lee's personal résumé/CV — a static site published on GitHub Pages, built from `Profile.pdf`.
 
 ## Site
 
-Plain HTML/CSS/JS, no build step:
+Plain HTML/CSS, no build step:
 
 ```
-index.html            landing page + roadmap
-prerequisites.html    stage 0
-frontend.html         stages 1–2
-backend.html          stages 3–5
-capstone.html         stage 6
+index.html            résumé page
 assets/css/style.css
-assets/js/main.js
+assets/img/           add your photo here (see assets/img/README.md)
+Profile.pdf           source résumé (LinkedIn export)
 ```
+
+### Add your photo
+
+Drop a square photo (~500×500px) at `assets/img/photo.jpg`. Until that file
+exists, the page shows a placeholder circle with your initials instead — no
+HTML/CSS changes needed.
 
 ## Publish to GitHub Pages
 
