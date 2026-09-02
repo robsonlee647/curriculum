@@ -25,6 +25,32 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.is-ready { opacity: 1; }
+
+/* ---------- Motion (scroll reveal, avatar tilt) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.16, 0.84, 0.44, 1),
+              transform 0.6s cubic-bezier(0.16, 0.84, 0.44, 1);
+}
+
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+.avatar { transition: transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1); will-change: transform; }
+
+.main-inner { opacity: 1; transition: opacity 0.18s ease; }
+.main-inner.is-swapping { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  body { opacity: 1; transition: none; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .avatar { transition: none; }
+  .main-inner { transition: none; }
 }
 
 .serif, .masthead-name {
