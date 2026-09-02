@@ -1,22 +1,31 @@
 # curriculum
 
-Robson Lee's personal résumé/CV — a static site published on GitHub Pages, built from `Profile.pdf`.
+Robson Lee's personal website — a multi-page static site published on GitHub Pages, built from `Profile.pdf`.
 
 ## Site
 
-Plain HTML/CSS, no build step:
+Plain HTML/CSS/JS, no build step:
 
 ```
-index.html            résumé page
-assets/css/style.css
-assets/img/           add your photo here (see assets/img/README.md)
-Profile.pdf           source résumé (LinkedIn export)
+index.html            Home — intro, stats, quick links
+about.html             About — summary & education
+experience.html         Experience — career timeline
+skills.html            Skills — technology categories
+contact.html            Contact — email, LinkedIn, location
+assets/css/style.css    shared design system (pastel sidebar layout)
+assets/img/             add your photo here (see assets/img/README.md)
+Profile.pdf             source résumé (LinkedIn export)
 ```
+
+Each page shares a persistent left sidebar (photo, name, nav, contact, top
+skills) next to a page-specific main column — a warm sand/terracotta
+palette with serif headings (Playfair Display) and a clean sans body
+(Work Sans), loaded from Google Fonts.
 
 ### Add your photo
 
 Drop a square photo (~500×500px) at `assets/img/photo.jpg`. Until that file
-exists, the page shows a placeholder circle with your initials instead — no
+exists, the hero shows a placeholder with your initials instead — no
 HTML/CSS changes needed.
 
 ## Publish to GitHub Pages
