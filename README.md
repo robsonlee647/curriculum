@@ -17,10 +17,11 @@ assets/img/             add your photo here (see assets/img/README.md)
 Profile.pdf             source résumé (LinkedIn export)
 ```
 
-Each page shares a persistent left sidebar (photo, name, nav, contact, top
-skills) next to a page-specific main column — a warm sand/terracotta
-palette with serif headings (Playfair Display) and a clean sans body
-(Work Sans), loaded from Google Fonts.
+Each page shares a persistent left sidebar — split into a cream monogram
+block on top and a dusty-teal contact/education/skills block below — next
+to a white main column with a serif name masthead (Playfair Display) and
+clean uppercase Montserrat headings, echoing a modern printable résumé
+template.
 
 ### Add your photo
 

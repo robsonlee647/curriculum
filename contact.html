@@ -6,87 +6,103 @@
 <title>Contact — Robson Lee</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div class="layout">
 
   <aside class="sidebar">
-    <div class="avatar">
-      <img src="assets/img/photo.jpg" alt="Robson Lee"
-           onerror="this.style.display='none'; this.parentElement.classList.add('avatar--empty')">
-      <span class="avatar-fallback" aria-hidden="true">RL</span>
-    </div>
-    <h1 class="sidebar-name">Robson Lee</h1>
-    <p class="sidebar-title">Senior Full Stack Java Developer</p>
-
-    <nav>
-      <ul class="side-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-
-    <hr class="sidebar-divider">
-
-    <div>
-      <p class="side-block-label">Contact</p>
-      <ul class="side-contact-list">
-        <li>📍 Toronto, Ontario, Canada</li>
-        <li>✉️ <a href="mailto:rofamex@gmail.com">rofamex@gmail.com</a></li>
-        <li>🔗 <a href="https://www.linkedin.com/in/robsonlee-78b22043" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <div class="sidebar-top">
+      <div class="avatar">
+        <img src="assets/img/photo.jpg" alt="Robson Lee"
+             onerror="this.style.display='none'; this.parentElement.classList.add('avatar--empty')">
+        <span class="avatar-fallback" aria-hidden="true">R | L</span>
+      </div>
     </div>
 
-    <hr class="sidebar-divider">
+    <div class="sidebar-bottom">
+      <div class="side-section">
+        <p class="side-heading">Menu</p>
+        <ul class="side-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
 
-    <div>
-      <p class="side-block-label">Top Skills</p>
-      <ul class="side-pill-list">
-        <li class="side-pill">Axon Framework</li>
-        <li class="side-pill">Java</li>
-        <li class="side-pill">Elasticsearch</li>
-      </ul>
+      <div class="side-section">
+        <p class="side-heading">Contact</p>
+        <ul class="side-contact-list">
+          <li>📍 Toronto, Ontario, Canada</li>
+          <li>✉️ <a href="mailto:rofamex@gmail.com">rofamex@gmail.com</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/in/robsonlee-78b22043" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <p class="side-heading">Education</p>
+        <p class="side-edu-degree">B.Sc. Computer Science</p>
+        <p class="side-edu-school">UNESP</p>
+        <p class="side-edu-dates">2008 – 2012</p>
+      </div>
+
+      <div class="side-section">
+        <p class="side-heading">Expertise</p>
+        <ul class="side-plain-list">
+          <li>Axon Framework</li>
+          <li>Java</li>
+          <li>Elasticsearch</li>
+        </ul>
+      </div>
     </div>
-
-    <p class="sidebar-footer">© 2026 Robson Lee</p>
   </aside>
 
   <main class="main">
     <div class="main-inner">
 
-      <span class="page-eyebrow">Contact</span>
-      <h2 class="page-title">Let's connect</h2>
-      <p class="lede">Open to new opportunities and collaborations — reach out any time.</p>
+      <div class="masthead">
+        <h1 class="masthead-name">Robson Lee</h1>
+        <p class="masthead-title">Senior Full Stack Java Developer</p>
+        <hr class="masthead-rule">
+      </div>
 
-      <hr class="rule">
+      <div class="section-block">
+        <p class="section-heading">Contact</p>
+        <hr class="section-rule">
+        <p class="lede">Open to new opportunities and collaborations — reach out any time.</p>
 
-      <div class="contact-cards">
-        <a class="contact-card" href="mailto:rofamex@gmail.com">
-          <span class="contact-icon">✉️</span>
-          <div>
-            <h3>Email</h3>
-            <p>rofamex@gmail.com</p>
-          </div>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/robsonlee-78b22043" target="_blank" rel="noopener">
-          <span class="contact-icon">🔗</span>
-          <div>
-            <h3>LinkedIn</h3>
-            <p>linkedin.com/in/robsonlee-78b22043</p>
-          </div>
-        </a>
-        <div class="contact-card">
-          <span class="contact-icon">📍</span>
-          <div>
-            <h3>Location</h3>
-            <p>Toronto, Ontario, Canada</p>
-          </div>
-        </div>
+        <ul class="contact-list-main">
+          <li>
+            <a class="contact-row" href="mailto:rofamex@gmail.com">
+              <span class="contact-row-icon">✉️</span>
+              <div>
+                <h3>Email</h3>
+                <p>rofamex@gmail.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="contact-row" href="https://www.linkedin.com/in/robsonlee-78b22043" target="_blank" rel="noopener">
+              <span class="contact-row-icon">🔗</span>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/robsonlee-78b22043</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <span class="contact-row">
+              <span class="contact-row-icon">📍</span>
+              <div>
+                <h3>Location</h3>
+                <p>Toronto, Ontario, Canada</p>
+              </div>
+            </span>
+          </li>
+        </ul>
       </div>
 
       <div class="main-footer">
