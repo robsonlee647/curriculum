@@ -11,7 +11,44 @@
     }
 
     setupClientNav();
+    setupMobileNav();
   });
+
+  /* ---------- Mobile off-canvas menu ---------- */
+  function setupMobileNav() {
+    const toggle = document.querySelector(".nav-toggle");
+    const backdrop = document.querySelector(".nav-backdrop");
+    if (!toggle) return;
+
+    function closeMenu() {
+      document.body.classList.remove("nav-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+
+    function openMenu() {
+      document.body.classList.add("nav-open");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+
+    toggle.addEventListener("click", () => {
+      if (document.body.classList.contains("nav-open")) closeMenu();
+      else openMenu();
+    });
+
+    if (backdrop) backdrop.addEventListener("click", closeMenu);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 860) closeMenu();
+    });
+
+    document.querySelectorAll(".side-nav a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+  }
 
   /* ---------- Scroll reveal + counters ---------- */
   function setupScrollReveal() {
