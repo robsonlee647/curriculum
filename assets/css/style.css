@@ -76,7 +76,14 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 60px rgba(38, 52, 63, 0.08);
 }
 
+/* Outer sidebar: stretches to match the full page height (grid row height),
+   so its background keeps going even on pages taller than one viewport.
+   The sticky, viewport-height content lives in .sidebar-sticky below. */
 .sidebar {
+  background: var(--teal);
+}
+
+.sidebar-sticky {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -575,6 +582,6 @@ img { max-width: 100%; display: block; }
 .main-footer a:hover { color: var(--gold); }
 
 @media print {
-  .sidebar { position: static; height: auto; }
+  .sidebar-sticky { position: static; height: auto; }
   .layout { grid-template-columns: 280px 1fr; }
 }
