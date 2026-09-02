@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backend — Full-Stack Developer Curriculum</title>
+<meta name="description" content="Stages 3–5: NestJS, TypeORM + PostgreSQL, and Firebase Authentication.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark"></span>curriculum</a>
+    <div class="nav-links">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="prerequisites.html" data-page="prerequisites.html">Prerequisites</a>
+      <a href="frontend.html" data-page="frontend.html">Frontend</a>
+      <a href="backend.html" data-page="backend.html">Backend</a>
+      <a href="capstone.html" data-page="capstone.html">Capstone</a>
+      <a class="gh" href="https://github.com/robsonlee647/curriculum" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor"><path d="M2 5h16v1.5H2zM2 9.25h16v1.5H2zM2 13.5h16V15H2z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Stages 3 – 5</span>
+    <h1>Backend</h1>
+    <p class="lede">One Todo API, rebuilt three times. Same routes, same DTOs — each stage swaps in exactly one new concept: the framework, then the database, then identity.</p>
+  </div>
+</header>
+
+<section class="tight">
+  <div class="wrap">
+    <span class="badge badge-stage3">Stage 3</span>
+    <h3 style="font-size:22px;margin:0 0 6px;">NestJS</h3>
+    <p style="color:var(--text-dim);max-width:640px;margin-bottom:16px;">The simplest possible NestJS REST API — no auth, no database. An in-memory array stands in for storage so the framework's shape is the only thing to learn: <strong style="color:var(--text)">module → controller → service → DTO</strong>.</p>
+    <table>
+      <tr><th>Method</th><th>Path</th><th>Description</th></tr>
+      <tr><td class="mono">GET</td><td class="mono">/api/todos</td><td>All todos, filterable by <code class="mono">done</code> / <code class="mono">priority</code></td></tr>
+      <tr><td class="mono">POST</td><td class="mono">/api/todos</td><td>Create a todo</td></tr>
+      <tr><td class="mono">PATCH</td><td class="mono">/api/todos/:id/toggle</td><td>Flip done ↔ undone</td></tr>
+      <tr><td class="mono">DELETE</td><td class="mono">/api/todos/:id</td><td>Delete</td></tr>
+    </table>
+    <div class="chips" style="margin:14px 0;"><span class="chip">NestJS 10</span><span class="chip">Swagger</span><span class="chip">Jest</span></div>
+    <a class="repo-link" href="https://github.com/alebofflee/alelee-back-learning-nest-js" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      alelee-back-learning-nest-js
+    </a>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <span class="badge badge-stage4">Stage 4</span>
+    <h3 style="font-size:22px;margin:0 0 6px;">TypeORM + PostgreSQL</h3>
+    <p style="color:var(--text-dim);max-width:640px;margin-bottom:16px;">The same Todo API, now backed by a real PostgreSQL database via TypeORM. The point of the exercise: the HTTP layer doesn't change at all.</p>
+    <table>
+      <tr><th>Layer</th><th>In-memory (stage 3)</th><th>PostgreSQL (stage 4)</th></tr>
+      <tr><td>Entity</td><td>Plain <code class="mono">interface</code></td><td><code class="mono">@Entity()</code> class</td></tr>
+      <tr><td>Storage</td><td><code class="mono">Todo[]</code> array</td><td><code class="mono">Repository&lt;Todo&gt;</code></td></tr>
+      <tr><td>Controller / DTOs</td><td colspan="2">Identical — unchanged</td></tr>
+    </table>
+    <div class="chips" style="margin:14px 0;"><span class="chip">TypeORM</span><span class="chip">PostgreSQL 16</span><span class="chip">synchronize: true</span></div>
+    <a class="repo-link" href="https://github.com/alebofflee/alelee-back-learning-typeorm-postgresql" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      alelee-back-learning-typeorm-postgresql
+    </a>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <span class="badge badge-stage5">Stage 5</span>
+    <h3 style="font-size:22px;margin:0 0 6px;">Firebase Authentication</h3>
+    <p style="color:var(--text-dim);max-width:640px;margin-bottom:16px;">Identity arrives last, on purpose — once the CRUD shape is second nature, layering a guard and a user relationship on top is a small, legible change. Every user now sees and manages only their own todos.</p>
+    <div class="flow">
+      <span class="flow-step">Client signs in via Firebase</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">ID token (JWT)</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">FirebaseAuthGuard verifies</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">request scoped to user</span>
+    </div>
+    <div class="chips" style="margin:14px 0;"><span class="chip">Firebase Admin SDK</span><span class="chip">Auth guards</span><span class="chip">Per-user ownership</span></div>
+    <a class="repo-link" href="https://github.com/alebofflee/alelee-back-learning-firebase-authentication" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      alelee-back-learning-firebase-authentication
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Curriculum &amp; mentorship by Robson Lee.</p>
+    <div class="foot-links">
+      <a href="https://github.com/robsonlee647" target="_blank" rel="noopener">Mentor · @robsonlee647</a>
+      <a href="https://github.com/alebofflee" target="_blank" rel="noopener">Student · @alebofflee</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
