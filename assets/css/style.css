@@ -86,7 +86,6 @@ img { max-width: 100%; display: block; }
 .sidebar-sticky {
   position: sticky;
   top: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -184,6 +183,7 @@ img { max-width: 100%; display: block; }
     left: 0;
     height: 100vh;
     width: min(320px, 85vw);
+    overflow-y: auto;
     transform: translateX(-100%);
     transition: transform 0.32s cubic-bezier(0.16, 0.84, 0.44, 1);
     z-index: 90;
@@ -272,8 +272,6 @@ img { max-width: 100%; display: block; }
   background: var(--teal);
   color: #fff;
   padding: 2.25rem 2rem 3rem;
-  flex: 1;
-  overflow-y: auto;
 }
 
 .side-section { margin-bottom: 2.25rem; }
